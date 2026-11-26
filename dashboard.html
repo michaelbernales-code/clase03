@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="plantilla/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container py-4">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            Atención: Mantenimiento de servidor programado para el fin de semana.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+
+        <h1 class="display-5">Panel de Control</h1>
+
+        <div class="input-group mb-4">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Buscar módulo o reporte...">
+            <button class="btn btn-primary" type="button">Buscar</button>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-3 mb-3">
+                <div class="btn-group-vertical w-100" role="group" aria-label="Accesos directos">
+                    <button type="button" class="btn btn-primary active">Resumen General</button>
+                    <button type="button" class="btn btn-outline-primary">Ventas</button>
+                    <button type="button" class="btn btn-outline-primary">Inventario</button>
+                    <button type="button" class="btn btn-outline-primary">Reportes</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row row-cols-1 row-cols-md-3 g-3 text-center">
+                    <div class="col">
+                        <div class="card h-100"><div class="card-body">
+                            <h2 class="h6">Servicios Activos</h2>
+                            <span class="badge bg-success rounded-pill">12 Online</span>
+                        </div></div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100"><div class="card-body">
+                            <h2 class="h6">Alertas Sistema</h2>
+                            <span class="badge bg-warning rounded-pill">2 Revisar</span>
+                        </div></div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100"><div class="card-body">
+                            <h2 class="h6">Usuarios Totales</h2>
+                            <span class="badge bg-primary rounded-pill">1,250</span>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="plantilla/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

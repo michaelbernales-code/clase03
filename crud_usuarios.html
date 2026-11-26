@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Usuarios</title>
+    <link rel="stylesheet" href="plantilla/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container py-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="#">Administración</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Usuarios</li>
+            </ol>
+        </nav>
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="h2">Mantenimiento de Usuarios</h1>
+            <button type="button" class="btn btn-primary">
+                Solicitudes Pendientes <span class="badge bg-danger">3</span>
+            </button>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Carlos Pérez</h2>
+                        <p class="card-text"><small>Rol: Administrador</small></p>
+                        <div class="btn-group btn-group-sm" role="group">
+                            <button type="button" class="btn btn-outline-primary">Ver</button>
+                            <button type="button" class="btn btn-outline-warning">Editar</button>
+                            <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Ana Gómez</h2>
+                        <p class="card-text"><small>Rol: Editor</small></p>
+                        <div class="btn-group btn-group-sm" role="group">
+                            <button type="button" class="btn btn-outline-primary">Ver</button>
+                            <button type="button" class="btn btn-outline-warning">Editar</button>
+                            <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Luis Morales</h2>
+                        <p class="card-text"><small>Rol: Moderador</small></p>
+                        <div class="btn-group btn-group-sm" role="group">
+                            <button type="button" class="btn btn-outline-primary">Ver</button>
+                            <button type="button" class="btn btn-outline-warning">Editar</button>
+                            <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">María Torres</h2>
+                        <p class="card-text"><small>Rol: Soporte</small></p>
+                        <div class="btn-group btn-group-sm" role="group">
+                            <button type="button" class="btn btn-outline-primary">Ver</button>
+                            <button type="button" class="btn btn-outline-warning">Editar</button>
+                            <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="plantilla/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

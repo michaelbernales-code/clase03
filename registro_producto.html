@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Producto</title>
+    <link rel="stylesheet" href="plantilla/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="display-5">Gestión de Productos <span class="badge bg-secondary rounded-pill">Nuevo</span></h1>
+
+        <form>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="nombre" class="form-label">Nombre del Producto</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ej. Monitor 24 pulgadas">
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="color" class="form-label">Etiqueta de Color</label>
+                    <input type="color" class="form-control form-control-color" id="color" value="#0d6efd" title="Elige un color">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="categorias" class="form-label">Categorías Asignadas</label>
+                <select class="form-select" id="categorias" multiple>
+                    <option value="hardware">Hardware</option>
+                    <option value="perifericos">Periféricos</option>
+                    <option value="oficina">Oficina</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label d-block">Estado Inicial</label>
+                <div class="btn-group" role="group" aria-label="Estado del producto">
+                    <input type="radio" class="btn-check" name="estado" id="disponible" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="disponible">Disponible</label>
+
+                    <input type="radio" class="btn-check" name="estado" id="agotado" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="agotado">Agotado</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Guardar Producto</button>
+            <button type="reset" class="btn btn-outline-secondary">Cancelar</button>
+        </form>
+    </div>
+    <script src="plantilla/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
